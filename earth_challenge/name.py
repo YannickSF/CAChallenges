@@ -1,6 +1,6 @@
 
-import os
+import sys
 
 if __name__ == '__main__':
-    path = os.path.abspath(__file__)
-    print(os.path.basename(path))
+    path_name = sys.argv[0].split('/')
+    print(path_name[len(path_name) - 1])
